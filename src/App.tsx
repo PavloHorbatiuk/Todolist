@@ -63,11 +63,12 @@ function App() {
         }
     }
 
-    function removeTodolist(id: string) {
+      function removeTodolist(id: string) {
         setTodolists(todolists.filter(tl => tl.id != id));
         delete tasks[id];
         setTasks({...tasks})
     }
+
 
     function addTodolist(title: string) {
         let todolist: TodolistType = {
