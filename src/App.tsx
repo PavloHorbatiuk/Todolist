@@ -152,7 +152,7 @@ function App() {
                         removeTodolist={removeTodolist}
                         changeTaskTitle={changeTaskTitle}
                         changeTodolistTitle={changeTodolistTitle}
-                    />----
+                    />
                         </Paper>
                     </Grid>
                 })
