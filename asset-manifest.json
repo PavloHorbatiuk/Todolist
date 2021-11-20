@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PavloHorbatiuk/Todolist/static/css/main.9058b2c9.chunk.css",
+    "main.js": "/PavloHorbatiuk/Todolist/static/js/main.1c0593ea.chunk.js",
+    "main.js.map": "/PavloHorbatiuk/Todolist/static/js/main.1c0593ea.chunk.js.map",
+    "runtime-main.js": "/PavloHorbatiuk/Todolist/static/js/runtime-main.93dd1958.js",
+    "runtime-main.js.map": "/PavloHorbatiuk/Todolist/static/js/runtime-main.93dd1958.js.map",
+    "static/js/2.62bc3f06.chunk.js": "/PavloHorbatiuk/Todolist/static/js/2.62bc3f06.chunk.js",
+    "static/js/2.62bc3f06.chunk.js.map": "/PavloHorbatiuk/Todolist/static/js/2.62bc3f06.chunk.js.map",
+    "index.html": "/PavloHorbatiuk/Todolist/index.html",
+    "precache-manifest.0efe209b49b90621a071dbc6a9f6bee9.js": "/PavloHorbatiuk/Todolist/precache-manifest.0efe209b49b90621a071dbc6a9f6bee9.js",
+    "service-worker.js": "/PavloHorbatiuk/Todolist/service-worker.js",
+    "static/css/main.9058b2c9.chunk.css.map": "/PavloHorbatiuk/Todolist/static/css/main.9058b2c9.chunk.css.map",
+    "static/js/2.62bc3f06.chunk.js.LICENSE.txt": "/PavloHorbatiuk/Todolist/static/js/2.62bc3f06.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93dd1958.js",
+    "static/js/2.62bc3f06.chunk.js",
+    "static/css/main.9058b2c9.chunk.css",
+    "static/js/main.1c0593ea.chunk.js"
+  ]
+}
