@@ -6,7 +6,7 @@ import AddItemForm from "./AddItemForm";
 import {AppBar, IconButton, Box, Toolbar, Typography} from "@material-ui/core";
 import MenuIcon from '@mui/icons-material/Menu';
 import {Container, Grid, Paper} from "@mui/material";
-
+export type FilterValuesType = "all" | "active" | "completed"
 export type TasksType = {
     title: string
     id: string,
@@ -18,7 +18,7 @@ export type TodolistType = {
     title: string
     filter: 'all' | "active" | "completed"
 }
-type tasksStateType = {
+export type TasksStateType = {
     [key: string]: Array<TasksType>
 }
 
@@ -97,12 +97,12 @@ function App() {
         {id: todolistId1, title: "What to learn", filter: "active"},
         {id: todolistId2, title: "What to buy", filter: "completed"},
     ])
-    let [tasks, setTasks] = useState<tasksStateType>({
+    let [tasks, setTasks] = useState<TasksStateType>({
         [todolistId1]: [
             {id: v1(), title: "HTML&CSS", isDone: false},
             {id: v1(), title: "JS", isDone: false},
             {id: v1(), title: "ReactJS", isDone: true},
-            {id: v1(), title: "Res API", isDone: true},
+             {id: v1(), title: "Res API", isDone: true},
             {id: v1(), title: "GraphQL", isDone: true}],
         [todolistId2]: [
             {id: v1(), title: "Book", isDone: true},

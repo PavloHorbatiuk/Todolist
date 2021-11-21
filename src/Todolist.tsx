@@ -1,17 +1,16 @@
 import React, {ChangeEvent} from 'react';
 import './App.css';
-import {TasksType} from "./App";
+import {FilterValuesType, TasksType} from "./App";
 import {Button, Checkbox, IconButton} from "@material-ui/core";
 import {Delete} from "@material-ui/icons";
 import AddItemForm from "./AddItemForm";
 import {EdditAbleSpan} from "./EdditAbleSpan";
 
-
 type TodolistType = {
     title: string
     tasks: Array<TasksType>
     removeTask: (taskId: string, todolistId: string) => void
-    changeFilter: (value: 'all' | "active" | "completed", todolistId: string) => void
+    changeFilter: (value: FilterValuesType, todolistId: string) => void
     addTask: (title: string, todolistId: string) => void
     changeTaskStatus: (id: string, isDone: boolean, todolistId: string) => void
     changeTaskTitle: (id: string, newTitle:string, todolistId: string) => void
