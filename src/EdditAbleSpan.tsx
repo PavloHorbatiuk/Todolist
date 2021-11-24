@@ -6,7 +6,7 @@ export type EdditAbleSpanType = {
     onChange: (newValue: string) => void
 }
 
-export function EdditAbleSpan(props: EdditAbleSpanType) {
+export const EdditAbleSpan = React.memo((props: EdditAbleSpanType) => {
     let [editMode, seteditMode] = useState(false)
     let [title, setTitle] = useState(props.title)
     const activateEditmode = () => {
@@ -17,11 +17,11 @@ export function EdditAbleSpan(props: EdditAbleSpanType) {
         seteditMode(false)
         props.onChange(title)
     }
-    const changeTitle=(e:ChangeEvent<HTMLInputElement>)=>{
-       setTitle( e.currentTarget.value)
+    const changeTitle = (e: ChangeEvent<HTMLInputElement>) => {
+        setTitle(e.currentTarget.value)
     }
 
     return editMode
         ? <TextField value={title} onChange={changeTitle} autoFocus onBlur={activateViwMode}/>
         : <span onDoubleClick={activateEditmode}>{props.title}</span>
-}
+})
