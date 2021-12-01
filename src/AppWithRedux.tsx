@@ -1,5 +1,5 @@
 import React, {useCallback} from 'react';
-import './App.css'; 
+import './App.css';
 import AddItemForm from "./AddItemForm";
 import {AppBar, IconButton, Box, Toolbar, Typography} from "@material-ui/core";
 import MenuIcon from '@mui/icons-material/Menu';
@@ -14,6 +14,7 @@ import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC} from "./
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootState} from "./state/store";
 import {Todolist} from "./Todolist";
+
 
 export type FilterValuesType = "all" | "active" | "completed"
 export type TasksType = {
@@ -42,6 +43,7 @@ function AppWithRedux() {
         const action = removeTaskAC(id, todolistId);
         dispatch(action);
     }
+
     const addTask = useCallback((title: string, todolistId: string) => {
         const action = addTaskAC(title, todolistId);
         dispatch(action)

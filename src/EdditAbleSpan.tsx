@@ -7,6 +7,7 @@ export type EdditAbleSpanType = {
 }
 
 export const EdditAbleSpan = React.memo((props: EdditAbleSpanType) => {
+    console.log("EdditAbleSpan Called")
     let [editMode, seteditMode] = useState(false)
     let [title, setTitle] = useState(props.title)
     const activateEditmode = () => {
